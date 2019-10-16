@@ -16,8 +16,8 @@ function App() {
       {/* <Landing /> */}
       {/* <BlueberryCrumbCake /> */}
       <PostRecipe />
-      {/* <Review /> */}
-      {/* <GetReviews /> */}
+      <Review />
+      <GetReviews />
       {/* <Test /> */}
     </div>
   );
