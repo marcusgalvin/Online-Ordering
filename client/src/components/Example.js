@@ -1,5 +1,7 @@
 import React from "react";
 // import { Link } from "react-router-dom";
+
+// import { Link } from "react-router-dom";
 import { BrowserRouter as Router, Switch, Route, Link } from "react-router-dom";
 
 import { Nav, NavItem, NavLink } from "reactstrap";
@@ -8,7 +10,7 @@ const Example = props => {
   return (
     <Router>
       <div>
-        <p>Galvin Family Recipes</p>
+        <p>Rate My Recipe</p>
         <Nav>
           <NavItem>
             <NavLink href="#">Apps</NavLink>
@@ -23,8 +25,8 @@ const Example = props => {
             <NavLink href="#">Grocery List</NavLink>
           </NavItem>
           <NavItem>
-            <NavLink href="#">Reviews</NavLink>
-            {/* <Link to="/users">Users</Link> */}
+            <NavLink href="Review.js">Reviews</NavLink>
+            <Link to="/Review">Users</Link>
           </NavItem>
         </Nav>
         <hr />

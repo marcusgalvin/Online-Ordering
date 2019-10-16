@@ -1,4 +1,7 @@
 import React, { useState } from "react";
+// import crumbcakeimg from "../images/crumbcake.jpg"
+// import coverImg from "../images/about-profile-cover.png";
+
 import {
   Carousel,
   CarouselItem,
@@ -10,7 +13,7 @@ import {
 const items = [
   {
     id: 1,
-    altText: "Slide 1",
+    altText: "Blueberry Lemon Crumb Cake",
     caption: "Slide 1"
   },
   {
@@ -70,7 +73,9 @@ const Landing = props => {
         {`.custom-tag {
               max-width: 100%;
               height: 500px;
-              background: black;
+              background-image: url("https://www.fifteenspatulas.com/wp-content/uploads/2011/04/Chocolate-Covered-Strawberries-Fifteen-Spatulas-11-640x427.jpg");
+
+
             }`}
       </style>
       <Carousel activeIndex={activeIndex} next={next} previous={previous}>
