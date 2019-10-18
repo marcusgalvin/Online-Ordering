@@ -1,10 +1,67 @@
 /* ///////////
 
-code for nav bar 
+code for appetizers
 
 ////////// */
+.appsHeader {
+   font-size: 50px;
+}
 
+.special {
+   color: red;
+}
+.appName {
+   margin: center;
+   /* text-align: center; */
+}
 
+.springRoll {
+   text-align: center;
+   flex-direction: left;
+}
+
+.pixles {
+   width: 200px;
+   height: 200px;
+}
+
+.cards {
+   width:350px;
+   height: 405px;
+   margin: 10px;
+}
+
+.flexcontainer {
+   display: flex;
+     flex-direction: row;
+
+}
+
+/* /////////
+
+below is nav bar code
+
+///////// */
+
+.apps {
+   /* font-size: 100px; */
+   /* float:right; */
+}
+
+.icon {
+   /* width: 200px; */
+   /* height: 200px; */
+   margin-right: 300px;
+}
+
+.navContainer {
+   /* display: flex; */
+   /* flex-direction: row; */
+   /* justify-content: right; */
+  margin-top: 100px;
+  text-align: center;
+   
+}
 
 
 
