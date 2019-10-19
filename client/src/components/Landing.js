@@ -1,43 +1,38 @@
-// import React, { Fragment } from "react";
-// // import MozSticks from "./MozSticks";
-
-// const SpringRoll = () => {
-//   return (
-//     <Fragment>
-//       <div className="springRoll">
-//         <p className="appName">Spring Roll</p>
-//           {/* <p>Rice paper wrap, shrimp, noodles, lettuce, cucumber, carrots, basil leaves, beansprouts and cilantro</p> */}
-//           <img className="pixles" src="https://whiteonricecouple.com/recipe/images/how-to-roll-spring-rolls-recipes-485-1.jpg" />
-
-          
-        
-
-//         </div>
-//     </Fragment>
-//   );
-// };
-
-// export default SpringRoll;
-
-import React from 'react';
-// import {
-//   Card, CardImg, CardText, CardBody,
-//   CardTitle, CardSubtitle, Button
-// } from 'reactstrap';
-
-const Landing = (props) => {
-  return (
-    <div className="banner">
-
-      {/* <img src="https://img.freepik.com/free-photo/top-view-sushi-arrangement_23-2148224568.jpg?size=626&ext=jpg" /> */}
-
-    </div>
+import React from "react";
+import Slider from "react-slick";
 
 
-
-
-
-  );
-};
-
+class Landing extends React.Component {
+  render() {
+    var settings = {
+      dots: true,
+      infinite: true,
+      speed: 500,
+      slidesToShow: 1,
+      slidesToScroll: 1
+    };
+    return (
+      <Slider {...settings}>
+        <div>
+          <h3>1111111</h3>
+        </div>
+        <div>
+          <h3>22222222</h3>
+        </div>
+        <div>
+          <h3>333333333</h3>
+        </div>
+        <div>
+          <h3>4444444</h3>
+        </div>
+        <div>
+          <h3>55555555</h3>
+        </div>
+        <div>
+          <h3>66666666669</h3>
+        </div>
+      </Slider>
+    );
+  }
+}
 export default Landing;

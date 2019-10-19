@@ -1,15 +1,15 @@
 import React, { Fragment } from "react";
-import RowOne from "./Appetizers/RowOne";
-import RowTwo from "./Appetizers/RowTwo"
+import SushiRowOne from "./Sushi/SushiRowOne";
+import SushiRowTwo from "./Sushi/SushiRowTwo"
 
 
 const Apps = () => {
   return (
     <Fragment>
-      <div className="appetizers">
-        <p className="appsHeader">Starters</p>
-        <RowOne/>
-        <RowTwo />
+      <div>
+      <p className="appsHeader">Sushi</p>
+      <SushiRowOne />
+      <SushiRowTwo />
 
         </div>
     </Fragment>

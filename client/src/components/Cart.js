@@ -7,6 +7,7 @@ const Cart = () => {
         <p>Cart placeholder</p>
         </div>
     </Fragment>
+    
   );
 };
 

@@ -2,7 +2,8 @@ import React from "react";
 import Landing from "./Landing";
 import Apps from "./Apps";
 import Entrees from "./Entrees"
-import Desserts from "./Desserts"
+import Cart from "./Cart"
+import ReviewPage from "./ReviewPage"
 
 import { BrowserRouter as Router, Switch, Route, Link } from "react-router-dom";
 
@@ -18,13 +19,12 @@ export default function App() {
 
 <div className="navContainer">
         <nav>
-           <Link to="/">Home - </Link>
-         
-
-              <Link to="/apps">Apps - </Link>
-
-              <Link to="/entrees">Entrees - </Link>
-              <Link to="/desserts">Desserts</Link>
+            <Link to="/">Home - </Link>
+            <Link to="/apps">Apps - </Link>
+            <Link to="/entrees">Sushi - </Link>
+            <Link to="/cart">Entrees - </Link>
+            <Link to="/reviewpage">Write A Review</Link>
+          
         </nav>
 </div>
 
@@ -38,14 +38,21 @@ export default function App() {
           <Route path="/apps">
             <Apps />
           </Route>
+
+          <Route path="/reviewpage">
+          <ReviewPage/>
+          </Route>
+
           <Route path="/entrees">
             <Entrees />
           </Route>
+
           <Route path="/">
             <Home />
           </Route>
-          <Route path="/desserts">
-            <Desserts />
+
+          <Route path="/cart">
+            <Cart />
           </Route>
         </Switch>
       </div>
@@ -64,3 +71,5 @@ function About() {
 function Users() {
   return <h2>Users</h2>;
 }
+
+

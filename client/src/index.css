@@ -3,6 +3,18 @@
 code for appetizers
 
 ////////// */
+
+.fade
+{
+        opacity:0.5;
+}
+.fade:hover
+{
+        opacity:1;
+}
+
+
+
 .appsHeader {
    font-size: 50px;
 }

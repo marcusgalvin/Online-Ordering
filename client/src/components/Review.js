@@ -91,7 +91,9 @@ class Review extends Component {
         <button onClick={this.registerUser}>Submit</button>
         {/* <button onClick={ this.getStars }>Submit1</button> */}
       </div>
+
     );
+    
   }
 }
 
