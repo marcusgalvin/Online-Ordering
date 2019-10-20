@@ -1,11 +1,12 @@
 // import React, { Fragment } from "react";
-// import CartItems from "./CartItems";
+// // import CartItems from "./CartItems";
 
 // const Cart = () => {
 //   return (
 //     <Fragment>
 //       <div>
-//         <CartItems />
+//         {/* <CartItems /> */}
+//         <p>cart holder</p>
 //       </div>
 //     </Fragment>
 //   );

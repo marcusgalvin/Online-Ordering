@@ -2,6 +2,7 @@ import React, { Component } from "react";
 import axios from "axios";
 import StarRatingComponent from "react-star-rating-component";
 import Test from "./Test";
+import Date from "./Date";
 
 class Review extends Component {
   constructor() {
@@ -51,49 +52,69 @@ class Review extends Component {
     console.log(this.state);
   };
 
+  // refreshPage = () => {
+  //   window.location.reload(false);
+  // };
+
   render() {
     const { rating } = this.state;
 
     return (
       <div
         id="sellDiv"
-        style={{ margin: "100x", textAlign: "center" }}
-        className="App"
+        style={{ margin: "100x", textAlign: "left" }}
+        className="revDiv"
       >
-        <h3>- Leave a Review -</h3>
+        <h3>Leave us a review</h3>
+        <br />
         <input
-          id="input1"
+          className="feild"
           onChange={e => this.setState({ userName: e.target.value })}
-          placeholder="User Name"
+          placeholder="Customer's Name..."
           type="text"
         />
+        <div className="ramenPic">
+          <img src="https://images-na.ssl-images-amazon.com/images/I/71tACQa1n1L._SX425_.jpg" />
+        </div>
         <br />
         <input
-          onChange={e => this.setState({ message: e.target.value })}
-          placeholder="Write a Review"
-          type="text"
-        />
-        <br />
-        <input
+          className="feild"
           onChange={e => this.setState({ date: e.target.value })}
-          placeholder="Date"
+          placeholder="Menu Item..."
           type="text"
         />
-        <br />
+
         <br />
         <StarRatingComponent
+          className="starSize"
           name="rate1"
           starCount={5}
           value={rating}
           onStarClick={this.onStarClick.bind(this)}
         />
         <br />
-        <button onClick={this.registerUser}>Submit</button>
-        {/* <button onClick={ this.getStars }>Submit1</button> */}
-      </div>
+        <input
+          className="feildRev"
+          onChange={e => this.setState({ message: e.target.value })}
+          placeholder="Write a Review..."
+          type="text"
+        />
+        <br />
 
+        <br />
+
+        <button className="submitButton" onClick={this.registerUser}>
+          {/* <button className="submitButton" onClick={this.registerUser}> */}
+          Submit
+        </button>
+
+        {/* <button onClick={ this.getStars }>Submit1</button> */}
+
+        <button className="submitButton" onClick={this.sortByRate}>
+          TEST
+        </button>
+      </div>
     );
-    
   }
 }
 

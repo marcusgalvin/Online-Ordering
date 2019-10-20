@@ -1,16 +1,73 @@
+/* /////////
+
+code for review
+
+//////// */
+
+.ramenPic {
+   float: right;
+   /* display: flex;
+   flex-direction: right;
+   width: 200px; */
+}
+
+.submitButton {
+   text-align: center;
+   color: blue;
+}
+
+.revDiv {
+   border-width: 2px;
+   /* border-style: solid; */
+   margin: 20px;
+
+}
+
+.revDiv {
+   /* background-color: lightblue; */
+   /* border-radius: 10%; */
+
+   /* background-image: linear-gradient(blue, lightblue); */
+
+   /* opacity: 0.5; */
+}
+
+.feild {
+   width: 500px;
+   /* background-color: lightblue; */
+   margin: 5px;
+   /* text-decoration: underline; */
+
+   border: red;
+   /* opacity: 0.5; */
+}
+
+.feildRev {
+   width: 500px;
+   height: 200px;
+   margin: 5px;
+   word-wrap: break-word;
+   border: red;
+   /* background-color: lightblue; */
+   /* opacity: 0.5; */
+}
+
+.starSize {
+   font-size: 25px;
+}
+
 /* ///////////
 
 code for appetizers
 
 ////////// */
 
-.fade
-{
-        opacity:0.5;
+.fade {
+   opacity: 0.5;
 }
-.fade:hover
-{
-        opacity:1;
+
+.fade:hover {
+   opacity: 1;
 }
 
 
@@ -22,6 +79,7 @@ code for appetizers
 .special {
    color: red;
 }
+
 .appName {
    margin: center;
    /* text-align: center; */
@@ -38,14 +96,20 @@ code for appetizers
 }
 
 .cards {
-   width:350px;
+   width: 350px;
    height: 405px;
    margin: 10px;
 }
 
+.cards:hover {
+   /* background: grey; */
+   opacity: 0.8;
+   cursor: pointer;
+}
+
 .flexcontainer {
    display: flex;
-     flex-direction: row;
+   flex-direction: row;
 
 }
 
@@ -63,16 +127,16 @@ below is nav bar code
 .icon {
    /* width: 200px; */
    /* height: 200px; */
-   margin-right: 300px;
+   margin-right: 220px;
 }
 
 .navContainer {
    /* display: flex; */
    /* flex-direction: row; */
    /* justify-content: right; */
-  margin-top: 100px;
-  text-align: center;
-   
+   margin-top: 100px;
+   text-align: center;
+
 }
 
 

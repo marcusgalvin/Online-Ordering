@@ -31,9 +31,15 @@ export default class GetReviews extends Component {
         // console.log(allData);
         // console.log(this.state);
         console.log(allData);
+        // console.log(_id);
         // console.log(allData[0]);
       });
   }
+
+  // sortByRate() {
+  //   console.log("hi");
+  //   // console.log(this.starCount);
+  // }
 
   render() {
     const { isLoading, allData } = this.state;
@@ -46,6 +52,9 @@ export default class GetReviews extends Component {
       <div>
         <React.Fragment>
           <h2>List of Reviews</h2>
+          {/* <button className="submitButton" onClick={this.sortByRate}>
+            TEST
+          </button> */}
           <div>
             {!isLoading ? (
               allData.map(post => {
