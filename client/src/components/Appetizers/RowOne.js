@@ -1,6 +1,14 @@
 import React from "react";
-import AddToCart from "./Cart/AddToCart";
+// import AddToCart from "./Cart/AddToCart";
 // import OrderDetails from "./Appetizers/OrderDetails";
+
+// class RowOne extends React.Component {
+//   render() {
+//     return <AddToCart eyecolor={"blue"} />;
+//   }
+// }
+// export default RowOne;
+
 import {
   Card,
   CardImg,
@@ -15,8 +23,9 @@ import { BrowserRouter as Router, Switch, Route, Link } from "react-router-dom";
 function addedToCart() {
   console.log("cart");
 }
+
 var freshRolls =
-  "Rice paper wrap, shrimp, noodles, lettuce, cucumber, carrots, basil leaves, beansprouts and cilantro.";
+  "Rice,paper,wrap,shrimp,noodles,lettuce,cucumber,carrots,basil,leaves,beansprouts,and,cilantro";
 
 const RowOne = props => {
   return (
@@ -82,9 +91,14 @@ const RowOne = props => {
           <Button>Order</Button>
         </CardBody>
       </Card>
-      <div>
-        <AddToCart listNameFromParent={freshRolls} />
-      </div>
+      {/* <div>
+        <p>The current date is: {props.date}</p>
+        <p>You ordered: {props.freshRolls}</p> */}
+      {/* <div>
+          {/* <h3>What date is it?</h3> */}
+      {/* <AddToCart freshRolls={freshRolls} />
+        </div> */}
+      {/* </div> */}
     </div>
   );
 };

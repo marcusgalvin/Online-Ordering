@@ -1,6 +1,7 @@
 import React, { Component } from "react";
 import axios from "axios";
 import StarRatingComponent from "react-star-rating-component";
+import TheDate from "./OfficialDate/TheDate";
 
 export default class GetReviews extends Component {
   state = {
@@ -52,6 +53,7 @@ export default class GetReviews extends Component {
       <div>
         <React.Fragment>
           <h2>List of Reviews</h2>
+
           {/* <button className="submitButton" onClick={this.sortByRate}>
             TEST
           </button> */}
@@ -79,6 +81,7 @@ export default class GetReviews extends Component {
                       starCount={5}
                       value={starCount}
                     />
+                    <p>{Date()}</p>
 
                     <hr />
                   </div>
