@@ -1,3 +1,22 @@
+/* ////
+code for finished cart
+/// */
+
+.finishedCart {
+   float: right;
+   width: 250px;
+   height: 600px;
+   border-style: solid;
+   border-width: 2px;
+
+
+}
+
+.float {
+   display: flex;
+   flex-direction: row;
+}
+
 /* /////////
 
 code for review
@@ -110,6 +129,7 @@ code for appetizers
 .flexcontainer {
    display: flex;
    flex-direction: row;
+   flex-wrap: wrap;
 
 }
 
@@ -136,9 +156,17 @@ below is nav bar code
    /* justify-content: right; */
    margin-top: 100px;
    text-align: center;
+   text-decoration: none;
+
 
 }
 
+.navContainer a {
+
+   text-decoration: none;
+
+
+}
 
 
 /* ///////////////

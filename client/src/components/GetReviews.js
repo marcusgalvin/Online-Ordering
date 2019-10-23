@@ -72,8 +72,8 @@ export default class GetReviews extends Component {
                   <div key={_id}>
                     <h2>Name: {username}</h2>
                     {/* <p>Mentor's Name: {userId}</p> */}
-                    <p>Message: {message}</p>
-                    <p>Date: {date}</p>
+                    {/* <p>Message: {message}</p> */}
+                    <p>Item: {date}</p>
                     <p>Rating: {starCount}</p>
 
                     <StarRatingComponent

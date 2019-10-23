@@ -6,9 +6,9 @@ const Apps = () => {
   return (
     <Fragment>
       <div className="appetizers">
-        <p className="appsHeader">Starters3</p>
+        <p className="appsHeader">Menu</p>
         <RowOne />
-        <RowTwo />
+        {/* <RowTwo /> */}
       </div>
     </Fragment>
   );

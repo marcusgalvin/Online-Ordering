@@ -18,8 +18,8 @@ export default function App() {
         <div className="navContainer">
           <nav>
             <Link to="/">Home - </Link>
-            <Link to="/apps">Apps - </Link>
-            <Link to="/entrees">Sushi - </Link>
+            <Link to="/apps">Menu - </Link>
+            {/* <Link to="/entrees">Sushi - </Link> */}
             {/* <Link to="/cart">Entrees - </Link> */}
             <Link to="/reviewpage">Write A Review - </Link>
             <Link to="/cart">View Cart</Link>
