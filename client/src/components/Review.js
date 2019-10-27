@@ -8,34 +8,36 @@ class Review extends Component {
   constructor() {
     super();
 
+    //inital state of the stars (2)
     this.state = {
-      name: "Test",
+      // name: "Test",
       rating: 2
     };
   }
 
   onStarClick(nextValue, prevValue, name) {
     this.setState({
-      name: name,
+      // name: name,
       rating: nextValue
     });
     // console.log('rating:', nextValue)
     // console.log('name:', name)
     // console.log(this.state)
 
-    const datas = {
-      starCount: nextValue,
-      name: name
-    };
-    console.log(datas);
+    // const datas = {
+    //   starCount: nextValue,
+    //   name: name
+    // };
+    // console.log(datas);
 
-    axios
-      .post("/api", datas)
+    // axios
+    //   .post("/api", datas)
 
-      .then(res => console.log(datas));
+    //   .then(res => console.log(datas));
   }
 
-  registerUser = () => {
+  //post request
+  UserRating = () => {
     // console.log(this.state);
 
     const data = {
@@ -52,9 +54,12 @@ class Review extends Component {
     console.log(this.state);
   };
 
-  // refreshPage = () => {
-  //   window.location.reload(false);
-  // };
+  //refresh page function to see all reviews -- will look back and get this function on the submit button so the page can refresh simultaneously with the submit
+  refreshPage() {
+    window.location.reload(false);
+  }
+
+
 
   render() {
     const { rating } = this.state;
@@ -65,7 +70,7 @@ class Review extends Component {
         style={{ margin: "100x", textAlign: "left" }}
         className="revDiv"
       >
-        <h3>Leave us a review</h3>
+        <h2>Leave us a review</h2>
         <br />
         <input
           className="feild"
@@ -103,15 +108,15 @@ class Review extends Component {
 
         <br />
 
-        <button className="submitButton" onClick={this.registerUser}>
+        <button className="submitButton" onClick={this.UserRating}>
           {/* <button className="submitButton" onClick={this.registerUser}> */}
-          Submit
+          Submit Review
         </button>
 
         {/* <button onClick={ this.getStars }>Submit1</button> */}
 
-        <button className="submitButton" onClick={this.sortByRate}>
-          TEST
+        <button className="submitButton" onClick={this.refreshPage}>
+          View All Reviews
         </button>
       </div>
     );

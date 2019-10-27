@@ -10,7 +10,12 @@ import {
   Button
 } from "reactstrap";
 
-const Products = ({ id, name, description, img, price, addFunc }) => {
+function checkState() {
+  console.log(this.state)
+}
+
+//props of each menu item
+const Products = ({ id, name, description, img, price, addFunc, total }) => {
   return (
     <div className="flexcontainer, float">
       <Card className="cards">
@@ -23,15 +28,17 @@ const Products = ({ id, name, description, img, price, addFunc }) => {
         />
         <CardBody>
           <CardTitle>{name}</CardTitle>
-          <CardSubtitle>{price}</CardSubtitle>
+          <CardSubtitle>${price}</CardSubtitle>
           <CardText>{description}</CardText>
+          {/* on click exucute the addFunc function, but also pass props into this for addFunc to access */}
           <Button
             onClick={() =>
-              addFunc({ id, name, description, img, price, units: 1 })
+              addFunc({ id, name, description, img, price, units: 1, total })
             }
           >
             Add
           </Button>
+          {/* <Button onClick={checkState}></Button> */}
         </CardBody>
       </Card>
     </div>

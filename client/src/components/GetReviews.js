@@ -6,19 +6,20 @@ import TheDate from "./OfficialDate/TheDate";
 export default class GetReviews extends Component {
   state = {
     allData: [],
-    // isLoading: true,
-    errors: null
+
   };
 
   componentDidMount() {
     this.getPosts();
   }
 
+  //get request
   getPosts() {
     axios
       .get("/api/getallusers")
 
       .then(res => {
+        //res.data is what being grabbed
         const allData = res.data;
         allData.map(user => ({
           name: `${user._id}`
@@ -27,20 +28,15 @@ export default class GetReviews extends Component {
         this.setState({
           allData
 
-          //  isLoading: false
         });
-        // console.log(allData);
-        // console.log(this.state);
+
+        //allData is equal to the user input object
         console.log(allData);
-        // console.log(_id);
-        // console.log(allData[0]);
+
       });
   }
 
-  // sortByRate() {
-  //   console.log("hi");
-  //   // console.log(this.starCount);
-  // }
+
 
   render() {
     const { isLoading, allData } = this.state;
@@ -52,7 +48,8 @@ export default class GetReviews extends Component {
     return (
       <div>
         <React.Fragment>
-          <h2>List of Reviews</h2>
+          <h2>List of Reviews:</h2>
+          <br />
 
           {/* <button className="submitButton" onClick={this.sortByRate}>
             TEST
@@ -71,16 +68,15 @@ export default class GetReviews extends Component {
                 return (
                   <div key={_id}>
                     <h2>Name: {username}</h2>
-                    {/* <p>Mentor's Name: {userId}</p> */}
-                    {/* <p>Message: {message}</p> */}
                     <p>Item: {date}</p>
-                    <p>Rating: {starCount}</p>
+                    <p>Message: {message}</p>
 
                     <StarRatingComponent
                       name="rate1"
                       starCount={5}
                       value={starCount}
                     />
+
                     <p>{Date()}</p>
 
                     <hr />
@@ -88,8 +84,8 @@ export default class GetReviews extends Component {
                 );
               })
             ) : (
-              <p>Loading...</p>
-            )}
+                <p>Loading...</p>
+              )}
           </div>
         </React.Fragment>
       </div>

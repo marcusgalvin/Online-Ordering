@@ -1,12 +1,33 @@
+/* //////
+code for slider
+////// */
+
+.slider {
+   width: 1250px;
+   height: 600px;
+   text-align: center;
+   font: black;
+}
+
+.lowerSlider {
+   color: black;
+}
+
+
 /* ////
 code for finished cart
 /// */
+
+.cartButton {
+   text-align: center;
+}
 
 .finishedCart {
    float: right;
    width: 250px;
    height: 600px;
    border-style: solid;
+   border-color: lightblue;
    border-width: 2px;
 
 
@@ -147,7 +168,7 @@ below is nav bar code
 .icon {
    /* width: 200px; */
    /* height: 200px; */
-   margin-right: 220px;
+   margin-right: 300px;
 }
 
 .navContainer {
@@ -155,6 +176,9 @@ below is nav bar code
    /* flex-direction: row; */
    /* justify-content: right; */
    margin-top: 100px;
+   margin-bottom: 30px;
+   font-size: 25px;
+
    text-align: center;
    text-decoration: none;
 
