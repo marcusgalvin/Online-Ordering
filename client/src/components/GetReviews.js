@@ -9,21 +9,22 @@ export default class GetReviews extends Component {
 
   };
 
+  //after all the elements of the page is rendered correctly, this method is called, which calls my api
   componentDidMount() {
     this.getPosts();
   }
 
-  //get request
+  //get request from getallreviews api
   getPosts() {
     axios
-      .get("/api/getallusers")
+      .get("/api/getallreviews")
 
       .then(res => {
         //res.data is what being grabbed
         const allData = res.data;
-        allData.map(user => ({
-          name: `${user._id}`
-        }));
+        // allData.map(user => ({
+        //   name: `${user._id}`
+        // }));
 
         this.setState({
           allData

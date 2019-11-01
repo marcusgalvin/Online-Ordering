@@ -118,6 +118,7 @@ class Review extends Component {
         <button className="submitButton" onClick={this.refreshPage}>
           View All Reviews
         </button>
+        <button>click test</button>
       </div>
     );
   }

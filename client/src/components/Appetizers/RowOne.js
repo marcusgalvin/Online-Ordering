@@ -80,7 +80,7 @@ function order(product) {
 class RowOne extends Component {
   constructor() {
     super();
-    //setting the state with one product's object
+    //setting the state with one EMPTY product's object
     this.state = {
       name: "React",
       cart: [
@@ -141,7 +141,7 @@ class RowOne extends Component {
 
       console.log(existingProduct[0].units)
       console.log(existingProduct)
-      console.log('total', existingProduct[0].total)
+      // console.log('total', existingProduct[0].total)
 
 
 
